@@ -41,6 +41,8 @@ print(exponencial(x))
 
 # PARTE GUILHERME - PI
 
+print("----------------- CALCULADO O NUMERO DE PI ------------------- ")
+
 def pi(termos):
     soma = 0
 
