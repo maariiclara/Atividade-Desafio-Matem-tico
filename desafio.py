@@ -15,6 +15,31 @@ print(f"O Número de Euler tem o valor aproximado de: {numero_e(termos)}")
 print("")
 
 # PARTE GUSTAVO - SENO
+# COSSENO - IGOR
+
+def cosseno(angulo):
+
+    pi = 3.141592653589793
+
+    # converter para radiano
+    rad = angulo * pi / 180
+
+    cos = 0
+    k = 10
+
+    for n in range(k):
+
+        expoente = 2 * n
+
+        # calcular fatorial
+        fatorial = 1
+        for i in range(1, expoente + 1):
+            fatorial *= i
+
+        termo = ((-1) ** n) * (rad ** expoente) / fatorial
+        cos += termo
+
+    return cos
 
 
 # PARTE IGOR - COSSENO
